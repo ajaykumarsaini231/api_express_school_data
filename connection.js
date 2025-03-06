@@ -2,9 +2,9 @@ const mysql = require("mysql2");
 
 // Create a connection without specifying a database first
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "Ajay@2006"
+  host: "sql101.infinityfree.com",
+  user: "if0_38462217",
+  password: "8107469345"
 });
 
 // Connect to MySQL
