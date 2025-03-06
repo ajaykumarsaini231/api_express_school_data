@@ -1,0 +1,19 @@
+{
+  "name": "api_school_management_system",
+  "version": "1.0.0",
+  "description": "School management api ",
+  "license": "ISC",
+  "author": "AJay Kumar Saini",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.13.0",
+    "nodemon": "^3.1.9"
+  }
+}
