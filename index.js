@@ -8,17 +8,11 @@ const cors = require("cors");
 app.use(cors());  
 
 
-// app.get("/listSchools", (req, res) => {
-//     db.query("SELECT * FROM schools", (err, results) => {
-//         if (err) {
-//             return res.status(500).send("Error fetching data");
-//         }
-//         if (results.length === 0) {
-//             return res.status(404).send("No students found");
-//         }
-//         res.json(results); 
-//     });
-// })
+app.get("/", (req, res) => {
+   res.json(
+    "/addschool : for adding new school , /listschools: find school by giving your latitute and longitute"
+)
+})
 
 function calculateDistance(lat1, lon1, lat2, lon2) {
     const toRadians = (degree) => (degree * Math.PI) / 180;
@@ -102,6 +96,6 @@ app.post("/addschool", (req, res) => {
 });
 
 
-app.listen(8900, ()=>{
+app.listen(8908, ()=>{
     console.log("connect")
 })

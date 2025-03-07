@@ -22,7 +22,7 @@ db.connect((err) => {
       console.error("Error creating database:", err);
       return;
     }
-    console.log("Database 'school_api' is ready!");
+    console.log("Database 'sql7766382' is ready!");
 
     // Switch to the newly created database
     db.changeUser({ database: "sql7766382" }, (err) => {
@@ -30,7 +30,7 @@ db.connect((err) => {
         console.error("Error switching to database:", err);
         return;
       }
-      console.log("Using database 'school_api'");
+      console.log("Using database sql7766382");
 
       // Step 2: Create `schools` table if it does not exist
       const createTableQuery = `
