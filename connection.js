@@ -2,9 +2,10 @@ const mysql = require("mysql2");
 
 // Create a connection without specifying a database first
 const db = mysql.createConnection({
-  host: "sql101.infinityfree.com",
-  user: "if0_38462217",
-  password: "8107469345"
+  host: "sql7.freesqldatabase.com",
+  user: "sql7766382",
+  password: "Cl14PvrwLI",
+  // database:"if0_38462217_school_api"
 });
 
 // Connect to MySQL
@@ -16,7 +17,7 @@ db.connect((err) => {
   console.log("Connected to MySQL server!");
 
   // Step 1: Create the database if it does not exist
-  db.query("CREATE DATABASE IF NOT EXISTS school_api", (err, result) => {
+  db.query("CREATE DATABASE IF NOT EXISTS sql7766382", (err, result) => {
     if (err) {
       console.error("Error creating database:", err);
       return;
@@ -24,7 +25,7 @@ db.connect((err) => {
     console.log("Database 'school_api' is ready!");
 
     // Switch to the newly created database
-    db.changeUser({ database: "school_api" }, (err) => {
+    db.changeUser({ database: "sql7766382" }, (err) => {
       if (err) {
         console.error("Error switching to database:", err);
         return;
