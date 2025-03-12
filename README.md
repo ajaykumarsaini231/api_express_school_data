@@ -2,6 +2,7 @@
 # School Management API
 
 A simple Node.js and Express.js API for managing school data using MySQL.
+## [LIVE HERE](https://api-school-management-system-rouge.vercel.app/)
 
 ## Features
 - Add new schools with name, address, latitude, and longitude.
